@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Welcome from './components/Welcome';
-import LandingPage from './screens/LandingPage/LandingPage';
+import { Word } from './components/Word';
 
 function App () {
   return(
@@ -11,8 +11,9 @@ function App () {
           <Header />
           <main> 
             <Routes>
-              <Route path='/'element= {<LandingPage/>} exact/>
-              <Route path='/welcome'element= {<Welcome/>} />
+              <Route path='/home'element= {<Welcome/>} />
+              <Route path='/:word'element= {<Word/>} />
+              <Route path='/:word/:color/:bg' element= {<Word/>} />
             </Routes>
           </main>
       <Footer />
