@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Welcome from './components/Welcome';
 import LandingPage from './screens/LandingPage/LandingPage';
-import Lists from './screens/Lists/Lists';
 
 function App () {
   return(
@@ -12,7 +12,7 @@ function App () {
           <main> 
             <Routes>
               <Route path='/'element= {<LandingPage/>} exact/>
-              <Route path='/lists'element= {<Lists/>} />
+              <Route path='/welcome'element= {<Welcome/>} />
             </Routes>
           </main>
       <Footer />
